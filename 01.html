@@ -7,12 +7,21 @@
     */
 
     //ENTRADA
-   
-   
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+    alert(`lista de palavras:  ${lista.join(" - ")}`);
 
     //PROCESSAMENTO
+    let palindromos = [];
 
+    for (let palavra of lista) {
+        let invertida = palavra.split("").reverse().join("").split;
+
+        if (palavra === invertida) {
+            palindromos.push(palavra);
+            
+        }
+    }
 
     //SAÍDA
-
+  document.write(`Essa é a lista de palindromos: ${palindromos.join("- ")}`);
 </script>
